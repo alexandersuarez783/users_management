@@ -23,10 +23,10 @@ export class Users extends Component {
           </tr>
         </thead>
         <tbody>
-          {users.map((forecast) => (
-            <tr key={forecast.date}>
-              <td>{users.id}</td>
-              <td>{users.username}</td>
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.id}</td>
+              <td>{user.username}</td>
             </tr>
           ))}
         </tbody>
@@ -45,8 +45,8 @@ export class Users extends Component {
 
     return (
       <div>
-        <h1 id="tableLabel">Weather forecast</h1>
-        <p>This component demonstrates fetching data from the server.</p>
+        <h1 id="tableLabel">Users Management</h1>
+        <p>Component used to manage Users</p>
         {contents}
       </div>
     );

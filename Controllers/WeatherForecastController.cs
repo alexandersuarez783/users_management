@@ -7,18 +7,17 @@ namespace users_management.Controllers
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
+        private static readonly IEnumerable<User> UserList = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-        private readonly ILogger<UsersController> _logger;
+            new User("hayase"),
+            new User("cassandra")
+        };
 
 
         [HttpGet]
-        public int Get()
+        public List<User> Get()
         {
-            return 23;
+            return UserList.ToList();
         }
     }
 }
