@@ -22,6 +22,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "users",
+    pattern: "{controller}/{action=Index}/{id?}");
+
+
 app.MapFallbackToFile("index.html");
 
 app.Run();
