@@ -6,7 +6,7 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Validacion Desarrollo web con nuevas Tecnologias</h1>
+        <h1>Validacion Desarrollo Web con Nuevas Tecnologias</h1>
         <p>Tecnologias Usadas:</p>
         <ul>
           <li>MySQL</li>
